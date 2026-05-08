@@ -32,8 +32,11 @@
 | :--------------- | :------------------------ |
 | AI 分身母資料夾  | `C:\Users\Howard\Desktop\Hoawrd影分身之術` |
 | 建立日期         | `2026-05-01`              |
-| 最後更新         | `2026-05-07`              |
+| 最後更新         | `2026-05-09`              |
 | Skills symlink   | ✅ `~/.claude/skills` → `000_Agent/skills/` |
 | 記憶系統啟用     | ✅                        |
+| Git 備份         | ✅ 已初始化（GitHub remote 待設定）|
+| Google Drive     | ✅ `G:\` 已偵測（需在 GD 設定中加入 Desktop 資料夾同步）|
+| 體檢腳本         | `sync-health.ps1`（執行：`powershell -ExecutionPolicy Bypass -File sync-health.ps1`）|
 
 <!-- AI 分身起始助手紀錄:END -->
