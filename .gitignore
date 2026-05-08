@@ -1,0 +1,24 @@
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Claude Code 本機快取（不同機器不同，不需同步）
+.claude/settings.local.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 敏感資訊（如果有的話）
+.env
+*.key
+secrets.json
+
+# 大型二進位檔（雷射圖檔請用 Git LFS 或另存）
+*.xcf
+*.psd
+
+# Google Drive 衝突暫存
+*(1).md
+*(2).md
