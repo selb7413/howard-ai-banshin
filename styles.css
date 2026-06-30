@@ -23,6 +23,8 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -1572,6 +1574,29 @@ input[type="file"] {
     font-size: 31px;
   }
 
+  .quiet-line {
+    max-width: calc(100% - 150px);
+    line-height: 1.35;
+    white-space: normal;
+  }
+
+  .cart-button {
+    top: 132px;
+    right: 14px;
+    min-height: 42px;
+    padding: 0 12px;
+    gap: 8px;
+    font-size: 17px;
+    box-shadow: 5px 5px 0 var(--blue);
+  }
+
+  .cart-count {
+    min-width: 32px;
+    height: 32px;
+    padding: 0 8px;
+    font-size: 17px;
+  }
+
   .hero-scene img {
     height: 430px;
     min-height: 0;
@@ -1622,6 +1647,18 @@ input[type="file"] {
     min-height: 0;
   }
 
+  .detail-note {
+    margin: 16px 0;
+    padding: 12px 14px;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .detail-price {
+    font-size: 28px;
+    line-height: 1.15;
+  }
+
   .detail-actions,
   .purchase-line,
   .addon-option-row,
@@ -1630,13 +1667,57 @@ input[type="file"] {
     grid-template-columns: 1fr;
   }
 
+  .purchase-line,
+  .addon-option-row {
+    justify-items: start;
+  }
+
+  .purchase-option-name,
+  .purchase-subtotal,
+  .addon-option-row > span,
+  .addon-option-row > strong {
+    width: 100%;
+  }
+
+  .option-qty {
+    width: 160px;
+    grid-template-columns: 48px 58px 48px;
+  }
+
+  .addon-qty {
+    width: 142px;
+    grid-template-columns: 42px 52px 42px;
+  }
+
+  .option-qty button,
+  .option-qty span {
+    min-height: 42px;
+  }
+
   .detail-thumbs {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .detail-tabs {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     border-top: 3px solid var(--ink);
+  }
+
+  .detail-tabs button {
+    min-height: 48px;
+    padding: 0 5px;
+    font-size: 14px;
+    line-height: 1.25;
+  }
+
+  .detail-tab-panel {
+    min-height: 0;
+    padding-top: 22px;
+  }
+
+  .detail-tab-panel p {
+    font-size: 16px;
+    line-height: 1.85;
   }
 
   .admin-item {
